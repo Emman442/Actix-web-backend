@@ -1,0 +1,27 @@
+[package]
+name = "rust-auth"
+version = "0.1.0"
+edition = "2024"
+
+
+
+[dependencies]
+actix-web="4.3.1"
+actix-cors="0.7.0"
+env_logger="0.10.0"
+async-trait="0.1.72"
+argon2="0.5.1"
+dotenv="0.15.0"
+jsonwebtoken="9.2.0"
+chrono={version = "0.4.26", features = ["serde"]} 
+validator={version = "0.16.1", features = ["derive"]}
+uuid={version = "1.4.1", features = ["serde", "v4"]}
+serde={version = "1.0.183", features = ["derive"]}
+serde_json="1.0.104"
+futures-util="0.3.28"
+sqlx={version = "0.7.1", features = ["tls-native-tls", "runtime-async-std", "postgres", "chrono", "uuid"]}
+open-ssl-probe="0.1.5"
+utopia={version = "4.1.0", features = ["actix-extras", "chrono"]}
+utopia-rapidoc={version = "2.0.0", features = ["actix-web"]}
+utopia-redoc={version = "2.0.0", features = ["actix-web"]}
+utopia-swagger-ui={version = "5.0.0", features = ["actix-web"]}
